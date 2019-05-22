@@ -21,10 +21,15 @@ export class AppComponent {
       icon: 'list'
     },
     {
+      title: 'Gastos',
+      url: '/gastos',
+      icon: 'calculator'
+    },
+    {
       title: 'Logout',
       url: '/login',
       icon: 'exit'
-    }
+    }   
   ];
 
   constructor(

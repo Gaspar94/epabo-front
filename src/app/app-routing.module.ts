@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
   { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },
   { path: 'main', loadChildren: './oportunidades/main/main.module#MainPageModule' },
-  { path: 'oportunidades', loadChildren: './oportunidades/oportunidades/oportunidades.module#OportunidadesPageModule' }
+  { path: 'oportunidades', loadChildren: './oportunidades/oportunidades/oportunidades.module#OportunidadesPageModule' },
+  { path: 'gastos', loadChildren: './gastos/gastos.module#GastosPageModule' },
+  { path: 'nuevo-gasto', loadChildren: './gastos/nuevo-gasto/nuevo-gasto.module#NuevoGastoPageModule' }
 ];
 
 @NgModule({
