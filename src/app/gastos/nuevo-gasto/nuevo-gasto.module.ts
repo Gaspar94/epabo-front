@@ -7,9 +7,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { NuevoGastoPage } from './nuevo-gasto.page';
 
-@Injectable({
-  providedIn: 'root'
-})
 const routes: Routes = [
   {
     path: '',
