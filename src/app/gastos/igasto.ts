@@ -5,6 +5,6 @@ export interface Igasto {
         fechaModificacion: Date,
         id: Number,
         montoGasto: Number,
-        userId: Number
+        userId: string
      
 }

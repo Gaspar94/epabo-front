@@ -20,14 +20,8 @@ export class NuevoGastoPage implements OnInit {
   }
 
   gasto(form){
-    let headers = new HttpHeaders();
-    headers.append("Accept", 'application/json');
-    headers.append("Authorization",
-                    "Bearer " + "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU1ODY2NzcyMX0.n4mTl6i7TSiEt8EYi_zc8LLOjaiPD5LT75nxqyof15UMjZ4bk0tVihwiTuP5HD5wGSRPU9BWlzalzm1x97RbIg");
-                    console.log(headers);
-    //gasto.userId(this.storage.get("ACCESS_LOGIN"));
     console.log(form);
-    this.httpClient.post(`${this.SERVER_ADDRESS}`, form.value,{headers}).subscribe(data => {
+    this.httpClient.post(`${this.SERVER_ADDRESS}`, form.value).subscribe(data => {
       console.log(data['_body']);
      }, error => {
       console.log(error);
